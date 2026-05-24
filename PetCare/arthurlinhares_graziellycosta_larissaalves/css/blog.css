@@ -1,0 +1,138 @@
+/* Importação da Fonte Montserrat para um visual moderno */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
+:root {
+    --verde-principal: #90EE90; /* Verde limão claro da paleta */
+    --verde-escuro: #2d5a27;    /* Verde para textos e títulos */
+    --fundo-suave: #f9fff9;     /* Fundo levemente esverdeado */
+    --branco: #ffffff;
+    --texto-cor: #444;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--fundo-suave);
+    color: var(--texto-cor);
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Link de Voltar */
+a[href="../index.html"] {
+    display: inline-block;
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: var(--verde-escuro);
+    font-weight: bold;
+    border: 2px solid var(--verde-principal);
+    padding: 8px 15px;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+a[href="../index.html"]:hover {
+    background-color: var(--verde-principal);
+    color: white;
+}
+
+/* Títulos */
+h1 {
+    color: var(--verde-escuro);
+    text-align: center;
+    font-size: 2.5rem;
+    border-bottom: 4px solid var(--verde-principal);
+    display: table;
+    margin: 20px auto 40px auto;
+    padding-bottom: 10px;
+}
+
+h2 {
+    color: var(--verde-escuro);
+    background-color: var(--verde-principal);
+    padding: 10px 20px;
+    border-radius: 8px;
+    margin-top: 50px;
+}
+
+/* Lista de Índice */
+ul:first-of-type {
+    background: var(--branco);
+    padding: 20px 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    list-style-type: none;
+}
+
+ul:first-of-type li a {
+    text-decoration: none;
+    color: var(--verde-escuro);
+    font-weight: 600;
+    transition: 0.2s;
+}
+
+ul:first-of-type li a:hover {
+    color: #000;
+    padding-left: 5px;
+}
+
+/* Imagens e Vídeos */
+img, video {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    margin: 20px 0;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    border: 3px solid var(--branco);
+}
+
+/* Listas de Conteúdo (ol e ul internas) */
+ol {
+    padding-left: 20px;
+}
+
+ol > li {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: var(--verde-escuro);
+    margin-top: 25px;
+}
+
+ol > li p, ol > li ul li {
+    font-weight: normal;
+    font-size: 1rem;
+    color: var(--texto-cor);
+}
+
+ul {
+    margin-top: 10px;
+}
+
+/* Estilização dos Links Externos implementados */
+p strong + a {
+    color: var(--verde-escuro);
+    font-weight: bold;
+    text-decoration: underline;
+    background-color: #eaffea;
+    padding: 2px 5px;
+    border-radius: 4px;
+}
+
+p strong + a:hover {
+    background-color: var(--verde-principal);
+    color: #000;
+}
+
+/* Ajuste de parágrafos */
+p {
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+/* Responsividade para Celulares */
+@media (max-width: 600px) {
+    body { padding: 15px; }
+    h1 { font-size: 1.8rem; }
+    h2 { font-size: 1.3rem; }
+}

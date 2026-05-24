@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetCare | Loja e Carrinho</title>
+    <link rel="stylesheet" href="../css/prod.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="../img/PetcareFavicon-removebg-preview.png" type="image/x-icon">
+    <script src="../Javascript/prod.js"></script>
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="logo-container">
+            <h1 class="brand-name">PetCare</h1>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="../index.html">Início</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="content-wrapper">
+        <section class="table-section">
+            <h2 class="section-title">Nossos Produtos e Serviços</h2>
+            
+            <table class="price-table">
+                <thead>
+                    <tr>
+                        <th>Categoria</th>
+                        <th>Item</th>
+                        <th>Preço</th>
+                        <th>Ação</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="2" class="cat-cell">Alimentação</td>
+                        <td>Ração Premium Adulto 10kg</td>
+                        <td>R$ 150.00</td>
+                        <td><button class="add-btn" onclick="addToCart('Ração Premium', 150.00)">Adicionar</button></td>
+                    </tr>
+                    <tr>
+                        <td>Petiscos Naturais (Saco)</td>
+                        <td>R$ 25.00</td>
+                        <td><button class="add-btn" onclick="addToCart('Petiscos Naturais', 25.00)">Adicionar</button></td>
+                    </tr>
+
+                    <tr>
+                        <td rowspan="2" class="cat-cell">Higiene</td>
+                        <td>Shampoo Antipulgas</td>
+                        <td>R$ 40.00</td>
+                        <td><button class="add-btn" onclick="addToCart('Shampoo Antipulgas', 40.00)">Adicionar</button></td>
+                    </tr>
+                    <tr>
+                        <td>Escova de Dentes Pet</td>
+                        <td>R$ 15.00</td>
+                        <td><button class="add-btn" onclick="addToCart('Escova de Dentes', 15.00)">Adicionar</button></td>
+                    </tr>
+
+                    <tr class="promo-row">
+                        <td colspan="4">🔥 Promoção: Ganhe 10% de desconto em serviços agendados!</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="carrinho-secao" class="cart-container">
+            <h2>Seu Carrinho</h2>
+            <div id="cart-items">
+                <p class="empty-msg">O carrinho está vazio.</p>
+            </div>
+            <div class="cart-total">
+                <strong>Total: R$ <span id="total-price">0.00</span></strong>
+            </div>
+            <button class="checkout-btn" onclick="alert('Pedido enviado!')">Finalizar Compra</button>
+        </section>
+    </main>
+
+    <script src="../js/cart.js"></script>
+</body>
+</html>

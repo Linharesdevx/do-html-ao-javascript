@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/icone.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/formulario.css">
+    <title>Inscrição</title>
+</head>
+<body>
+    <a href="../index.html"><p id="voltar">Início</p></a>
+
+    <form action="resposta.html" method="post">
+        <legend>Formulário de Inscrição</legend>
+        <fieldset>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required><br><br>
+
+             <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone"><br><br>
+            <label for="data">Data de nascimento:</label>
+            <input type="date" id="data" name="data"><br><br>
+        </fieldset>
+
+        <label>Quais emoções você sente?</label><br>
+        <input type="checkbox" id="preocupacao" name="emocao" value="ansiedade">
+        <label for="preocupacao">Preocupação constante</label><br>
+        <input type="checkbox" id="irritabilidade" name="emocao" value="estresse">
+        <label for="irritabilidade">Irritabilidade</label><br>
+        <input type="checkbox" id="impaciência" name="emocao" value="depressao">
+        <label for="impaciência">Impaciência</label><br>
+        <input type="checkbox" id="insegurança" name="emocao" value="ansiedade">
+        <label for="insegurança">Insegurança</label><br> 
+        <input type="checkbox" name="culpa" id="culpa" value="culpa"> 
+        <label for="culpa">Culpa</label><br><br>
+
+        <label for="motivo">O que você espera desse evento?</label><br>
+        <textarea id="motivo" name="motivo" rows="4" cols="50"></textarea><br><br>
+
+        <label>O que você mais precisa desenvolver?</label><br>
+        <input type="radio" id="autocontrole" name="desenvolvimento" value="autocontrole">
+        <label for="autocontrole">Autocontrole</label><br>
+        <input type="radio" id="resiliencia" name="desenvolvimento" value="resiliencia">
+        <label for="resiliencia">Resiliência</label><br>
+        <input type="radio" id="autoconhecimento" name="desenvolvimento" value="autoconhecimento">
+        <label for="autoconhecimento">Autoconhecimento</label><br>
+        <input type="radio" id="empatia" name="desenvolvimento" value="empatia">
+        <label for="empatia">Empatia</label><br>
+        <input type="radio" id="paciência" name="desenvolvimento" value="paciência">
+        <label for="paciência">Paciência</label><br>
+
+        <p>Em que dias da semana você pode participar?</p>
+        <select name="dias_semana" id="dias_semana">
+            <option value="segunda">Segunda-feira</option>
+            <option value="terca">Terça-feira</option>
+            <option value="quarta">Quarta-feira</option>
+            <option value="quinta">Quinta-feira</option>
+            <option value="sexta">Sexta-feira</option>
+        </select><br><br>
+        <button type="submit" class="botao">Enviar</button>
+    </form>
+</body>
+</html>

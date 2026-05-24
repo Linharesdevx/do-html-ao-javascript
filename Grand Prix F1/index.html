@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grand Prix SITE</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./img/Favicon.png" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="./pages/cadastro.html">Cadastro Torcedor</a></li>
+                <li><a href="./pages/pilotos.html">Pilotos</a></li>
+                <li><a href="./pages/equipes.html">Equipes</a></li>
+            </ul>
+        </nav>
+        <h1>Bem vindo, Torcedor!</h1>
+        
+    </header>
+    <p id="first">Esta é a página inicial do nosso site de formula 1, aqui você irá
+        encontrar as últimas notícias, resultados de corridas, análises e muito mais sobre o mundo da Fórmula 1. Fique
+        ligado para não perder nenhuma atualização!
+    </p>
+
+    <p>Explore as seções do site para descobrir mais sobre os pilotos, equipes, circuitos e tudo o que envolve a emoção
+        da Fórmula 1. Aproveite a experiência e compartilhe sua paixão pelo esporte com outros torcedores!</p>
+
+
+    <h2 class="titulo">Seções do Site</h2>
+    <section class="container">
+
+        <div class="card"><a href="./pages/pilotos.html">Pilotos
+                <hr>
+            </a>
+            <button onclick="toggleInfo(this)">Ler Mais</button>
+            <div>
+                <p id="pilotos" class="escondido">Conheça todos os pilotos do grid, suas estatísticas, conquistas e
+                    trajetória na Fórmula 1.</p>
+            </div>
+        </div>
+        <div class="card"><a href="./pages/equipes.html">Equipes
+                <hr>
+            </a>
+            <button onclick="toggleInfo(this)">Ler Mais</button>
+            <div>
+                <p id="equipes" class="escondido">Explore as equipes que disputam o campeonato, seus carros, engenheiros
+                    e histórico de vitórias.</p>
+            </div>
+        </div>
+        <div class="card"><a href="./pages/cadastro.html">Cadastro Torcedor
+                <hr>
+            </a>
+            <button onclick="toggleInfo(this)">Ler Mais</button>
+            <div>
+                <p id="cadastro" class="escondido">Faça seu cadastro como torcedor para receber notícias exclusivas, participar de promoções e se conectar
+                    com outros fãs da Fórmula 1.
+                </p>
+            </div>
+        </div>
+
+    </section>
+    <script src="./js/script.js"></script>
+    <footer>
+        <p>&copy; 2026 Fórmula 1. Todos os direitos reservados.</p>
+    </footer>
+</body>
+
+</html>

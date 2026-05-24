@@ -1,0 +1,106 @@
+:root {
+    --verde-principal: #90EE90;
+    --verde-escuro: #2d5a27;
+    --fundo: #f4fbf4;
+    --branco: #ffffff;
+    --borda: #dddddd;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--fundo);
+    margin: 0;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header */
+.main-header {
+    background-color: var(--verde-principal);
+    padding: 15px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid var(--verde-escuro);
+}
+
+.logo-container { display: flex; align-items: center; gap: 10px; }
+.logo-img { height: 40px; }
+.brand { font-weight: bold; color: var(--verde-escuro); font-size: 1.2rem; }
+
+/* Container do Formulário e Sucesso */
+.content-wrapper {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.card {
+    background: var(--branco);
+    width: 100%;
+    max-width: 600px;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    border: 1px solid var(--borda);
+}
+
+h2 { color: var(--verde-escuro); text-align: center; margin-bottom: 20px; }
+
+/* Elementos do Formulário */
+fieldset {
+    border: 1px solid var(--verde-principal);
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 15px;
+}
+
+legend { font-weight: bold; color: var(--verde-escuro); padding: 0 10px; }
+
+.field { margin-bottom: 15px; }
+label { display: block; font-weight: 600; margin-bottom: 5px; font-size: 14px; }
+
+input[type="text"], input[type="email"], select, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--borda);
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.options-group { display: flex; gap: 15px; flex-wrap: wrap; margin-top: 5px; }
+.option-label { display: flex; align-items: center; font-weight: normal; cursor: pointer; }
+.option-label input { margin-right: 8px; accent-color: var(--verde-escuro); }
+
+/* Botões */
+.actions { display: flex; gap: 10px; margin-top: 20px; }
+
+.btn {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+.btn-submit { background: var(--verde-principal); color: var(--verde-escuro); }
+.btn-submit:hover { background: #7ccd7c; }
+
+.btn-reset { background: #eee; color: #666; }
+.btn-reset:hover { background: #ddd; }
+
+.btn-home { 
+    display: block; text-align: center; text-decoration: none; 
+    background: var(--verde-escuro); color: white; margin-top: 20px;
+}
+
+/* Estilo para página de sucesso */
+.success-content { text-align: center; }
+.success-icon { font-size: 50px; color: var(--verde-principal); }

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>PetCare | Banho</title>
+    <link rel="stylesheet" href="../css/agendB.css">
+    <link rel="shortcut icon" href="../img/PetcareFavicon-removebg-preview.png" type="image/x-icon">
+
+</head>
+<body>
+    <header class="main-header">
+        <div class="logo-container">
+            <span class="brand">PetCare</span>
+        </div>
+    </header>
+
+    <main class="content-wrapper">
+        <div class="card">
+            <h2>Agendamento de Banho</h2>
+            <form action="confirmBanho.html" method="GET">
+                <fieldset>
+                    <legend>Dados do Pet</legend>
+                    <div class="field">
+                        <label>Nome do Pet:</label>
+                        <input type="text" name="pet_nome" required placeholder="Ex: Bob">
+                    </div>
+                    <div class="field">
+                        <label>Espécie:</label>
+                        <select name="especie">
+                            <option value="cao">Cão</option>
+                            <option value="gato">Gato</option>
+                        </select>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Preferências</legend>
+                    <div class="field">
+                        <label>Tipo de Banho:</label>
+                        <div class="options-group">
+                            <label class="option-label"><input type="radio" name="tipo" value="simples" checked> Simples</label>
+                            <label class="option-label"><input type="radio" name="tipo" value="medicinal"> Medicinal</label>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label>Adicionais:</label>
+                        <div class="options-group">
+                            <label class="option-label"><input type="checkbox" name="servico" value="unha"> Unhas</label>
+                            <label class="option-label"><input type="checkbox" name="servico" value="dente"> Dentes</label>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label>Observações:</label>
+                        <textarea name="obs" rows="3" placeholder="Alguma alergia?"></textarea>
+                    </div>
+                </fieldset>
+
+                <div class="actions">
+                    <button type="reset" class="btn btn-reset">Limpar</button>
+                    <button type="submit" class="btn btn-submit">Enviar Pedido</button>
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+</html>

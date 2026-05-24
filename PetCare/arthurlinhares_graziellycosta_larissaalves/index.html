@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetCare | Seu Pet em Boas Mãos</title>
+    <link rel="stylesheet" href="css/stylee.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="img/PetcareFavicon.jpeg" type="image/x-icon">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="logo-container">
+            <img src="img/PetcareLogo-removebg-preview.png" alt="PetCare Logo" class="logo">
+            <h1 class="brand-name">PetCare</h1>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="pages/AgendBanho.html">Agendamento de Banho</a></li>
+                <li><a href="pages/agendT.html">Agendamento de Tosa</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <main class="content-wrapper">
+        
+        <section class="section-container">
+            <h2 class="section-title">Blog Informativo</h2>
+            <div class="blog-highlight">
+                <article class="card">
+                    <div class="card-img-wrapper">
+                        <img src="img/mishuhanda-pug-2660490.jpg" alt="Dicas Pet">
+                    </div>
+                    <div class="card-body">
+                        <h3>Guia Completo de Cuidados</h3>
+                        <p>Acesse nosso conteúdo exclusivo com dicas de saúde, alimentação e bem-estar para o seu pet.</p>
+                        <a href="pages/Blog.html" class="read-more">Acessar Blog</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="produtos" class="section-container">
+            <h2 class="section-title">Nossos Produtos</h2>
+            <div class="grid-layout">
+                <div class="card product">
+                    <div class="card-img-wrapper">
+                        <img src="img/Racao_Affinity_PetCare_GranPlus_Choice_Frango_e_Carne.jpg" alt="Ração">
+                    </div>
+                    <div class="card-body">
+                        <h3>Ração Premium Cães</h3>
+                        <p class="price">R$ 159,90</p>
+                        <button class="buy-button" onclick="comprarAgora('Ração Premium Cães', 159.90)">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+
+                <div class="card product">
+                    <div class="card-img-wrapper">
+                        <img src="img/5981-3.webp" alt="Brinquedo">
+                    </div>
+                    <div class="card-body">
+                        <h3>Kit Mordedores Eco</h3>
+                        <p class="price">R$ 42,00</p>
+                        <button class="buy-button" onclick="comprarAgora('Kit Mordedores Eco', 42.00)">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="main-footer">
+        <p>&copy; 2026 PetCare - Todos os direitos reservados.</p>
+    </footer>
+
+   
+       <script>
+    function comprarAgora(nome, preco) {
+        // 1. Criamos o objeto do produto com os dados recebidos do botão
+        const produtoParaAdicionar = {
+            name: nome,
+            price: parseFloat(preco)
+        };
+        
+        // 2. Salvamos no localStorage (o "banco de dados" temporário do navegador)
+        // Precisamos usar JSON.stringify porque o localStorage só aceita texto
+        localStorage.setItem('produtoPendente', JSON.stringify(produtoParaAdicionar));
+        
+        // 3. Redirecionamento para a página de produtos
+        // Verifique se o caminho "pages/produtos.html" está correto conforme sua pasta
+        window.location.href = "pages/prod.html"; 
+    }
+        </script>
+
+</body>
+</html>

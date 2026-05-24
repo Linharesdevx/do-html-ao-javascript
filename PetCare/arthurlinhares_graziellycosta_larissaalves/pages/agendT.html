@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>PetCare | Tosa</title>
+    <link rel="stylesheet" href="../css/agendB.css">
+    <link rel="shortcut icon" href="../img/PetcareFavicon-removebg-preview.png" type="image/x-icon">
+
+</head>
+<body>
+    <header class="main-header">
+        <div class="logo-container">
+            <span class="brand">PetCare</span>
+        </div>
+    </header>
+
+    <main class="content-wrapper">
+        <div class="card">
+            <h2>Agendamento de Tosa</h2>
+            <form action="confirmTosa.html" method="GET">
+                <fieldset>
+                    <legend>Identificação</legend>
+                    <div class="field">
+                        <label>Nome do Pet:</label>
+                        <input type="text" name="pet_nome" required>
+                    </div>
+                    <div class="field">
+                        <label>Porte:</label>
+                        <select name="porte">
+                            <option value="p">Pequeno</option>
+                            <option value="m">Médio</option>
+                            <option value="g">Grande</option>
+                        </select>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Estética</legend>
+                    <div class="field">
+                        <label>Tipo de Tosa:</label>
+                        <div class="options-group">
+                            <label class="option-label"><input type="radio" name="estilo" value="maquina" checked> Máquina</label>
+                            <label class="option-label"><input type="radio" name="estilo" value="tesoura"> Tesoura</label>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label>Instruções de Corte:</label>
+                        <textarea name="instrucao" rows="4" placeholder="Como deseja o corte?"></textarea>
+                    </div>
+                </fieldset>
+
+                <div class="actions">
+                    <button type="reset" class="btn btn-reset">Limpar</button>
+                    <button type="submit" class="btn btn-submit">Agendar Tosa</button>
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+</html>

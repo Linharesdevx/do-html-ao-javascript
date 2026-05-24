@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/pagina.css">
+    <title>Aprendendo desenvolvimento web</title>
+</head>
+<body>
+   <a href="../index.html"> VOLTAR</a>
+    <nav>
+        <ul>
+            <a href="#cabeçalho">
+                <li>Uso da tag &lt;H1&gt;</li>
+            </a>
+            <a href="#paragrafo">
+                <li>Uso da tag &lt;p&gt;</li>
+            </a>
+            <a href="#imagem">
+                <li>Uso da tag &lt;img&gt;</li>
+            </a>
+            <a href="#link">
+                <li>Uso da tag &lt;a&gt;</li>
+            </a>
+            <a href="#listau">
+                <li>Uso da tag &lt;ul&gt;</li>
+            </a>
+            <a href="#listao">
+                <li>Uso da tag &lt;ol&gt;</li>
+            </a>
+            <a href="#itemlista">
+                <li>Uso da tag &lt;li&gt;</li>
+            </a>
+        </ul>
+    </nav>
+    <h2>Tags HTML</h2>
+    <p>As tags HTML são os elementos básicos que compõem a estrutura de uma página web.Elas são usadas para definir o conteúdo e a formatação da página. <br>A seguir, estão algumas das principais tags HTML e suas descrições:</p>
+    <table>
+        <thead>
+            <tr>
+                <th>Tag</th>
+                <th>Descrição</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>H1 a H6</td>
+                <td>São tags de cabeçalho, usadas para títulos e subtítulos. Possui grais hierárquicos distintos, sendo o &lt;h1&gt; o mais importante e o &lt;h6&gt; o menos relevante.</td>
+            </tr>
+            <tr>
+                <td>&lt;p&gt;</td>
+                <td>Tag de parágrafo, usada para texto corrido.</td>
+            </tr>
+            <tr>
+                <td>&lt;img&gt;</td>
+                <td>Tag para inserir imagens no documento.</td>
+            </tr>
+            <tr>
+                <td>&lt;a&gt;</td>
+                <td>Tag de link, usada para criar hyperlinks para outras páginas ou recursos.</td>
+            </tr>
+            <tr>
+                <td>&lt;ul&gt;</td>
+                <td>Tag de lista não ordenada, usada para criar listas de itens.</td>
+            </tr>
+             <tr>
+                <td>&lt;ol&gt;</td>
+                <td>Tag de lista  ordenada, usada para criar listas de itens em ordem.</td>
+            </tr>
+            <tr>
+                <td>&lt;li&gt;</td>
+                <td>Tag de item de lista, usada para criar itens dentro de listas.</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2" rowspan="2">Essas são apenas algumas das muitas tags disponíveis no HTML. Cada tag tem uma função específica e pode ser combinada com outras para criar páginas web complexas e interativas.</td>
+            </tr>
+    </table>
+    <h2>Exemplos de uso de cada tag</h2>
+    <ul>
+        <li id="cabeçalho">
+            <p><strong>Exemplo de uso da tag &lt;h1&gt; a &lt;h6&gt;:</strong></p>
+            <code>
+                <pre>
+                    &lt;h1&gt;Título Principal&lt;/h1&gt;
+                    &lt;h2&gt;Título Secundário&lt;/h2&gt;
+                    &lt;h3&gt;Título Terciário&lt;/h3&gt;
+                    &lt;h4&gt;Título Quaternário&lt;/h4&gt;
+                    &lt;h5&gt;Título Quintanário&lt;/h5&gt;
+                    &lt;h6&gt;Título Sextanário&lt;/h6&gt;
+                </pre>
+            </code>
+            <p>
+                 As tags de cabeçalho em HTML, que vão de &lt;h1&gt; até &lt;h6&gt;, são utilizadas para definir títulos e subtítulos dentro de uma página. 
+                 Elas seguem uma hierarquia de importância, sendo &lt;h1&gt; o nível mais alto e o&lt;h6&gt;o mais baixo. 
+                 Isso significa que o&lt;h1&gt; geralmente representa o título principal da página, enquanto as demais tags são usadas para organizar o conteúdo em seções e subseções, 
+                 tornando a estrutura mais clara e compreensível.   
+            </p>
+
+            <p>
+                 Além de influenciarem a organização visual do conteúdo, essas tags também têm grande importância para a semântica da página. 
+                 Os mecanismos de busca utilizam essa hierarquia para entender melhor o conteúdo do site, o que impacta diretamente em SEO (otimização para motores de busca). 
+                 Da mesma forma, leitores de tela usados por pessoas com deficiência visual dependem dessa estrutura para navegar pelo conteúdo de forma eficiente, 
+                 o que torna o uso correto das tags essencial para acessibilidade.
+            </p>
+
+            <p>
+                É importante utilizar as tags de forma lógica e consistente, respeitando a ordem hierárquica — ou seja, evitando pular níveis sem necessidade, 
+                como ir de o&lt;h1&gt; diretamente para o&lt;h4&gt;. Embora seja possível estilizar qualquer cabeçalho com CSS, o significado semântico dessas tags deve ser mantido. 
+                    Dessa forma, garante-se não apenas uma boa apresentação visual, mas também uma melhor organização, acessibilidade e desempenho nos mecanismos de busca.
+            </p>
+        </li>
+        <li id="paragrafo">
+            <p><strong>Exemplo de uso da tag &lt;p&gt;:</strong></p>
+            <code>
+                <pre>
+                    &lt;p&gt;Este é um parágrafo.&lt;/p&gt;
+                </pre>
+            </code>
+            <p>
+                A tag &lt;p&gt; em HTML é utilizada para definir parágrafos de texto em uma página.<br>
+                Ela é uma das tags mais básicas e importantes para a estruturação de conteúdo, pois permite organizar textos longos em blocos separados, facilitando a leitura.<br>
+                Sempre que há uma nova ideia ou parte do conteúdo que precisa ser destacada como um bloco independente, utiliza-se a tag &lt;p&gt;.
+            </p>
+
+            <p>
+                Além de organizar o conteúdo visualmente, a tag &lt;p&gt; também possui significado semântico, 
+                indicando aos navegadores e mecanismos de busca que aquele trecho corresponde a um parágrafo.<br>
+                Isso contribui para a acessibilidade, já que leitores de tela conseguem interpretar melhor a divisão do texto, 
+                oferecendo uma navegação mais clara para usuários com deficiência visual.<br>
+                Por padrão, os navegadores aplicam espaçamento antes e depois de cada &lt;p&gt;, o que ajuda a diferenciar os blocos de texto sem necessidade de estilização adicional.
+            </p>
+
+            <p>
+                É importante usar a tag &lt;p&gt; corretamente, evitando colocá-la dentro de elementos que não permitem esse tipo de conteúdo ou utilizá-la para fins puramente visuais, 
+                como criar espaços na página.<br>
+                Para ajustes de aparência, o ideal é utilizar CSS.<br>
+                Dessa forma, o código permanece organizado, semântico e mais fácil de manter, garantindo uma melhor experiência tanto para usuários quanto para desenvolvedores.
+            </p>
+        </li>
+        <li id="imagem">
+            <p><strong>Exemplo de uso da tag &lt;img&gt;:</strong></p>
+            <code>
+                <pre>
+                    &lt;img src="caminho/para/imagem.jpg" alt="Descrição da imagem"&gt;
+                </pre>
+            </code>
+            <p>
+                 A tag &lt;img&gt; em HTML é utilizada para inserir imagens em uma página web.<br>
+                 Diferente de outras tags, ela não possui conteúdo de fechamento, sendo considerada uma tag vazia (ou self-closing).<br>
+                 Para funcionar corretamente, é necessário utilizar o atributo src, que indica o caminho da imagem, seja ele um arquivo local ou uma URL.<br>
+                 Dessa forma, a imagem é carregada e exibida diretamente no local onde a tag foi inserida no código.
+            </p>
+
+            <p>
+                Outro atributo essencial da tag &lt;img&gt; é o alt, que fornece um texto alternativo para a imagem.<br>
+                Esse atributo é extremamente importante para acessibilidade, pois permite que leitores de tela descrevam a imagem para pessoas com deficiência visual.<br>
+                Além disso, o alt também é exibido caso a imagem não seja carregada, ajudando o usuário a entender o conteúdo que deveria estar ali.<br>
+                O uso adequado desse atributo também contribui para o SEO, pois mecanismos de busca utilizam essas descrições para indexar melhor o conteúdo da página.
+            </p>
+
+            <p>
+                Além de src e alt, a tag &lt;img&gt; pode incluir outros atributos, como width e height, que definem as dimensões da imagem, e title, que exibe um texto ao passar o mouse sobre ela.<br>
+                No entanto, para manter uma boa prática de desenvolvimento, recomenda-se controlar a aparência da imagem com CSS, em vez de depender apenas de atributos HTML.<br>
+                Assim, o código fica mais organizado, flexível e alinhado com os padrões modernos de desenvolvimento web.
+            </p>
+        </li>
+        <li id="link">
+            <p><strong>Exemplo de uso da tag &lt;a&gt;:</strong></p>
+            <code>
+                <pre>
+                    &lt;a href="https://www.exemplo.com"&gt;Visite nosso site&lt;/a&gt;
+                </pre>
+            </code>
+           <p>
+                A tag &lt;a&gt; em HTML, conhecida como “âncora”, é utilizada para criar links que permitem a navegação entre páginas ou partes de um mesmo documento.<br>
+                O principal atributo dessa tag é o href, que define o destino do link, podendo ser uma URL externa, um arquivo local ou até mesmo um identificador dentro da própria página.<br>
+                Ao clicar no conteúdo dentro da tag &lt;a&gt;, o usuário é direcionado para o endereço especificado.
+                </p>
+
+                <p>
+                Além do href, a tag &lt;a&gt; pode conter outros atributos importantes, como o target, que define como o link será aberto.<br>
+                Por exemplo, o valor _blank faz com que o link seja aberto em uma nova aba do navegador.<br>
+                Também é possível usar a tag para criar links de e-mail (com mailto:) ou para números de telefone (com tel:), ampliando suas possibilidades de uso.<br>
+                Isso torna a &lt;a&gt; uma das tags mais versáteis para interação e navegação na web.
+                </p>
+
+                <p>
+                É importante utilizar a tag &lt;a&gt; de forma clara e acessível, garantindo que o texto do link descreva bem o destino, em vez de usar expressões genéricas como “clique aqui”.<br>
+                Isso melhora a experiência do usuário e também a acessibilidade, já que leitores de tela utilizam o texto do link para orientar a navegação.<br>
+                Além disso, boas práticas de uso contribuem para o SEO e para a organização geral do conteúdo da página.
+    </p>
+        </li>
+        <li id="listau">
+            <p><strong>Exemplo de uso da tag &lt;ul&gt; e &lt;li&gt;:</strong></p>
+            <code>
+                <pre>
+                    &lt;ul&gt;
+                        &lt;li&gt;Item 1&lt;/li&gt;
+                        &lt;li&gt;Item 2&lt;/li&gt;
+                        &lt;li&gt;Item 3&lt;/li&gt;
+                    &lt;/ul&gt;
+                </pre>
+            </code>
+                <p>
+                    As tags &lt;ul&gt; e &lt;li&gt; em HTML são utilizadas em conjunto para criar listas não ordenadas, ou seja, listas em que a ordem dos itens não é relevante.<br>
+                    A tag &lt;ul&gt; (unordered list) define o contêiner da lista, enquanto a tag &lt;li&gt; (list item) representa cada item dentro dessa lista.<br>
+                    Por padrão, os navegadores exibem listas &lt;ul&gt; com marcadores (geralmente bolinhas) antes de cada item.
+                </p>
+
+                <p>
+                    Essas tags são muito úteis para organizar informações de forma clara e estruturada, como menus de navegação, listas de tarefas, tópicos ou características de um produto.<br>
+                    Cada elemento &lt;li&gt; pode conter não apenas texto, mas também outros elementos HTML, como links, imagens ou até mesmo outras listas, permitindo a criação de estruturas mais complexas, como listas aninhadas.
+                </p>
+
+                <p>
+                    Além do aspecto visual, o uso correto de &lt;ul&gt; e &lt;li&gt; também contribui para a semântica da página e para a acessibilidade.<br>
+                    Leitores de tela conseguem identificar que se trata de uma lista e informar ao usuário quantos itens ela possui, melhorando a navegação.<br>
+                    Para alterar a aparência da lista, como remover os marcadores ou modificar o estilo, recomenda-se utilizar CSS, mantendo o HTML limpo e bem estruturado.
+                </p>
+        </li>
+        <li id="listao">
+            <p><strong>Exemplo de uso da tag &lt;ol&gt; e &lt;li&gt;:</strong></p>
+            <code>
+                <pre>
+                    &lt;ol&gt;
+                        &lt;li&gt;Primeiro item&lt;/li&gt;
+                        &lt;li&gt;Segundo item&lt;/li&gt;
+                        &lt;li&gt;Terceiro item&lt;/li&gt;
+                    &lt;/ol&gt;
+                </pre>
+            </code>
+                <p>
+                    As tags &lt;ol&gt; e &lt;li&gt; em HTML são utilizadas para criar listas ordenadas, ou seja, listas em que a sequência dos itens é importante.<br>
+                    A tag &lt;ol&gt; (ordered list) define o contêiner da lista, enquanto a tag &lt;li&gt; (list item) representa cada elemento dentro dela.<br>
+                    Por padrão, os navegadores exibem os itens numerados, indicando claramente a ordem em que devem ser seguidos.
+                </p>
+
+                <p>
+                    Esse tipo de lista é muito útil em situações como passo a passo de instruções, receitas, rankings ou qualquer conteúdo que dependa de uma sequência lógica.<br>
+                    Assim como nas listas não ordenadas, cada &lt;li&gt; pode conter diferentes tipos de conteúdo, como textos, links, imagens ou até mesmo outras listas, permitindo a criação de estruturas mais completas e organizadas.
+                </p>
+
+                <p>
+                    Além de melhorar a organização visual, o uso de &lt;ol&gt; e &lt;li&gt; também contribui para a semântica e acessibilidade da página.<br>
+                    Leitores de tela conseguem interpretar a lista como ordenada e informar a posição de cada item ao usuário.<br>
+                    Caso seja necessário alterar o tipo de numeração (como letras ou números romanos), isso pode ser feito com atributos HTML ou, preferencialmente, com CSS, mantendo o código limpo e seguindo boas práticas de desenvolvimento.
+                </p>
+        </li> 
+    </ul>
+    <h2 class="s">Sugestões de páginas e canais para aprofundamento</h2>
+    <ul>
+        <li> <a  href="https://www.cursoemvideo.com/"  target="_blank">Plataforma Curso em Vídeo de Gustavo Guanabara</a></li>
+        <li> <a href=https://www.youtube.com/cursoemvideo  target="_blank">Canal Curso em Vídeo de Gustavo Guanabara</a></li>
+        <li><a href="https://www.origamid.com/curso/" target="_blank">Origamid (Pago)</a></li>
+        <li><a href="https://www.w3schools.com/" target="_blank">W3schools</a></li>
+        <li><a href="https://www.udemy.com/" target="_blank">Udemy</a></li>
+
+    </ul>
+</body>
+</html>

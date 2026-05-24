@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="../css/cadastro.css">
+    <link rel="shortcut icon" href="../img/Favicon.png" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="cadastro.html">Cadastro Torcedor</a></li>
+                <li><a href="pilotos.html">Pilotos</a></li>
+                <li><a href="equipes.html">Equipes</a></li>
+                <li><a href="../index.html">Voltar</a></li>
+            </ul>
+        </nav>
+        <h1>Faça seu cadastro aqui!</h1>
+        <p>Preencha os campos abaixo para criar sua conta:</p>
+    </header>
+    <form action="sucesso.html" method="get">
+        <label for="enome"><input type="text" name="nome" id="enome" size="30" maxlength="30"
+                placeholder="Nome Completo" class="form" required>
+        </label>
+        <label for="esenha"><input type="password" minlength="8" name="senha" id="esenha" size="30" maxlength="30"
+                placeholder="Senha" class="form" required></label>
+        <label for="csenha"><input type="password" minlength="8" name="csenha" id="csenha" size="30" maxlength="30"
+                placeholder="Confirmar Senha" class="form" required></label>
+        <label for="eemail"><input type="email" name="email" id="eemail" size="30" maxlength="30" placeholder="Email"
+                class="form" required></label>
+        <label for="equipe">Qual sua equipe favorita?</label>
+        <select name="equipe" id="equipe">
+            <option value="mercedes">Mercedes</option>
+            <option value="redbull">Red Bull</option>
+            <option value="ferrari">Ferrari</option>
+            <option value="mclaren">McLaren</option>
+            <option value="alpine">Alpine</option>
+            <option value="astonmartin">Aston Martin</option>
+            <option value="alphatauri">AlphaTauri</option>
+            <option value="williams">Williams</option>
+            <option value="alfaRomeo">Alfa Romeo</option>
+            <option value="haas">Haas</option>
+        </select>
+        <div>
+            <input type="checkbox" name="notificacoes" id="notificacoes">
+            <label for="notificacoes">Deseja receber notificações desse site?</label>
+        </div>
+        <input type="submit" value="Cadastrar">
+    </form>
+    <img src="../img/Logo.png">
+    <footer>
+        <p>&copy; 2026 Fórmula 1. Todos os direitos reservados.</p>
+    </footer>
+</body>
+
+</html>
