@@ -89,7 +89,7 @@ O projeto mais completo do portfólio. Inclui loja com carrinho de compras funci
 
 ## 👥 Autores
 
-**Arthur Linhares** · **Larissa Alves** · **Grazielly Costa**
+**Arthur Linhares**
 
 ---
 
