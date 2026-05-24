@@ -30,19 +30,7 @@ Blog multi-página de receitas culinárias organizado por categorias (café da m
 
 ---
 
-### 03 · 14 Dias de Yoga
-> Landing page com cronograma e formulário de inscrição
-
-**Tecnologias:** HTML · CSS · Google Fonts  
-**Páginas:** index · formulário · resposta
-
-Landing page de um programa de yoga com tabela de cronograma de 14 dias e formulário de inscrição completo com campos de texto, checkboxes, radio buttons, textarea, select e validação nativa do HTML5.
-
-📌 **Conceitos aplicados:** tabelas, formulários completos (fieldset, legend, inputs variados), validação HTML5, Google Fonts
-
----
-
-### 04 · Grand Prix — Site de Fórmula 1
+### 03 · Grand Prix — Site de Fórmula 1
 > Fan page da F1 com pilotos, equipes e cadastro de torcedor
 
 **Tecnologias:** HTML · CSS · JavaScript  
@@ -54,7 +42,7 @@ Site temático de Fórmula 1 com grid de pilotos da temporada 2026, tabela de eq
 
 ---
 
-### 05 · PetCare — Pet Shop Completo
+### 04 · PetCare — Pet Shop Completo
 > Site de pet shop com loja, carrinho e agendamentos
 
 **Tecnologias:** HTML · CSS · JavaScript · Google Fonts  
@@ -72,9 +60,8 @@ O projeto mais completo do portfólio. Inclui loja com carrinho de compras funci
 |---------|:----:|:---:|:----------:|:------------:|
 | 01 · Introdução ao HTML | ✅ | ✅ | — | ⭐ |
 | 02 · Cantinho das Receitas | ✅ | ✅ | — | ⭐⭐ |
-| 03 · 14 Dias de Yoga | ✅ | ✅ | — | ⭐⭐ |
-| 04 · Grand Prix F1 | ✅ | ✅ | ✅ | ⭐⭐⭐ |
-| 05 · PetCare | ✅ | ✅ | ✅ | ⭐⭐⭐⭐ |
+| 03 · Grand Prix F1 | ✅ | ✅ | ✅ | ⭐⭐⭐ |
+| 04 · PetCare | ✅ | ✅ | ✅ | ⭐⭐⭐⭐ |
 
 ---
 
